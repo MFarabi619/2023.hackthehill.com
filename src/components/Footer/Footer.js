@@ -9,12 +9,12 @@ function Footer() {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 15,
+      items: 10,
       slidesToSlide: 1 // optional, default to 1.
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 10,
+      items: 7,
       slidesToSlide: 1 // optional, default to 1.
     },
     mobile: {
@@ -55,17 +55,17 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div classname="carslide">
-      <Carousel
-        responsive={responsive}
-        arrows={false}
-        ssr={true} // means to render carousel on server-side.
-        infinite={true}
-        transitionDuration={1000}
-        autoPlay={true}
-        autoPlaySpeed={4000}
-        centerMode={true}
-      >
+      <div className="carslide">
+        <Carousel
+          responsive={responsive}
+          arrows={false}
+          ssr={true} // means to render carousel on server-side.
+          infinite={true}
+          transitionDuration={50}
+          autoPlay={true}
+          autoPlaySpeed={2000}
+          centerMode={true}
+        >
           <div>
             <box-icon color='#3B4779' animation='tada-hover' 
             name="user-circle" type="regular" size="md"/>

@@ -47,11 +47,19 @@
   .MediaLinks a {
     padding: 15px;
   }
+  .carslide{
+    width: 50%;
+    margin-left: 25%;
+  }
 }
 @media only screen and (max-width: 600px) {
 
   .MediaLinks a {
     padding: 5px;
+  }
+  .carslide{
+    width: 100%;
+    margin-left: 0%;
   }
 }
 @media only screen and (max-width: 450px) {
@@ -59,15 +67,19 @@
   .MediaLinks a {
     padding: 0px;
   }
+  .carslide{
+    width: 100%;
+    margin-left: 0%;
+  }
 }
 
 @media only screen and (max-width: 353px) {
   .MediaLinks a box-icon {
     margin-right: 2px;
   }
+  .carslide{
+    width: 100%;
+    margin-left: 0%;
+  }
 }
-.carslide{
-  height: 50px;
-  width: 200px;
-  position:fixed;
-}
+
