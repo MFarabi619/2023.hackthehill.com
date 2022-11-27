@@ -10,17 +10,17 @@ function Footer() {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 10,
-      slidesToSlide: 1 // optional, default to 1.
+      slidesToSlide: 0.01 // optional, default to 1.
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
       items: 7,
-      slidesToSlide: 1 // optional, default to 1.
+      slidesToSlide: 0.01 // optional, default to 1.
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
       items: 5,
-      slidesToSlide: 1 // optional, default to 1.
+      slidesToSlide: 0.01 // optional, default to 1.
     }
   };
   return (
@@ -54,6 +54,9 @@ function Footer() {
             </a>
           </div>
         </div>
+        <div className="PresentText">
+          <p>Presented by the Hack the Hill Team</p>
+        </div><br/>
       </div>
       <div className="carslide">
         <Carousel
@@ -61,9 +64,9 @@ function Footer() {
           arrows={false}
           ssr={true} // means to render carousel on server-side.
           infinite={true}
-          transitionDuration={50}
+          transitionDuration={0.1}
           autoPlay={true}
-          autoPlaySpeed={2000}
+          autoPlaySpeed={0.00001}
           centerMode={true}
         >
           <div>

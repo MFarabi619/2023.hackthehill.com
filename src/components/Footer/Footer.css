@@ -3,6 +3,11 @@
   src: url(../../assets/fonts/coolvetica/coolvetica\ rg.otf);
 }
 
+@font-face {
+  font-family: Rubik;
+  src: url(../../assets/fonts/rubik/Rubik-Regular.ttf);
+}
+
 .Footer {
     justify-content: center;
   }
@@ -29,6 +34,16 @@
   font-size: 15px;
   margin-bottom: 25px;
   font-family: Coolvetica;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+}
+
+.PresentText {
+  display: block;
+  font-size: 12px;
+  font-size: 15px;
+  margin-bottom: 25px;
+  font-family: Rubik;
   font-weight: normal;
   letter-spacing: 0.05em;
 }
