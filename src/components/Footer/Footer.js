@@ -10,7 +10,7 @@ function Footer() {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 10,
-      slidesToSlide: 0.01 // optional, default to 1.
+      slidesToSlide: 0.1 // optional, default to 1.
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -62,9 +62,8 @@ function Footer() {
         <Carousel
           responsive={responsive}
           arrows={false}
-          ssr={true} // means to render carousel on server-side.
           infinite={true}
-          transitionDuration={0.1}
+          transitionDuration={0}
           autoPlay={true}
           autoPlaySpeed={0.00001}
           centerMode={true}
