@@ -1,9 +1,23 @@
 import './NavBar.css';
 import { Link } from 'react-scroll';
+import {useState} from 'react'
 import MLH from '../../assets/Logos/mlhbadge.svg';
 function Navbar() {
+
+  const [color, setColor] = useState(false)
+  const changeColor = () => {
+    if(window.scrollY >= 30){
+      setColor(true)
+    }
+    else{
+      setColor(false)
+    }
+  }
+
+  window.addEventListener('scroll', changeColor)
+
   return (
-    <div className="Navbar">
+    <div className={color ? ' Navbar Navbar-header' : 'Navbar'}>
         <img className='logo' alt='Logo' src="Logos\hthlogo_icon_ver.svg"></img>
         <div className='Items'>
           <a target="_blank" href="https://mlh.io/seasons/2023/events"><img className='mlh' alt="MLH" src={MLH}></img></a>

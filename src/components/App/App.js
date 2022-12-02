@@ -18,14 +18,15 @@ function App() {
         <div class="Gradient">
           <NavBar />
           <Hero />
-        </div>
-        <About />
+          <About />
         <SponsorShowcase />
         <Schedule />
         <Collaborators />
         <FAQ />
         <hr></hr>
         <Footer />
+        </div>
+        
       </div>
     </div>
   );

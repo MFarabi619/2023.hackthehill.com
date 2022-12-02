@@ -4,8 +4,18 @@
 }
 
 .Navbar{
-    height: 150px;
+    height: 100px;
     width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    overflow: hidden;
+    transition: .3s ease-in;
+}
+
+.Navbar-header{
+    background-color: #adecf9;
+
 }
 
 .mlh{
@@ -66,5 +76,11 @@
         width: 105px;
         height: 105px;
         top: 0;
+    }
+
+	.Navbar {
+        max-height: 90px;
+        overflow: hidden;
+        margin-bottom: 50px;
     }
 }
