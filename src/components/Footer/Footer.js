@@ -10,17 +10,17 @@ function Footer() {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 10,
-      slidesToSlide: 0.1 // optional, default to 1.
+      slidesToSlide: 0.2 // optional, default to 1.
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
       items: 7,
-      slidesToSlide: 0.01 // optional, default to 1.
+      slidesToSlide: 0.2 // optional, default to 1.
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
       items: 5,
-      slidesToSlide: 0.01 // optional, default to 1.
+      slidesToSlide: 0.2 // optional, default to 1.
     }
   };
   return (
@@ -65,48 +65,79 @@ function Footer() {
           infinite={true}
           transitionDuration={0}
           autoPlay={true}
-          autoPlaySpeed={0.00001}
+          autoPlaySpeed={1/10000}
           centerMode={true}
         >
           <div>
             <box-icon color='#3B4779' animation='tada-hover' 
-            name="user-circle" type="regular" size="md"/>
+            name="user-circle" type="regular" size="lg"/>
           </div>
           <div>
             <box-icon color='#3B4779' animation='tada-hover' 
-            name="user-circle" type="regular" size="md"/>
-          </div><div>
+            name="user-circle" type="regular" size="lg"/>
+          </div>
+          <div>
             <box-icon color='#3B4779' animation='tada-hover' 
-            name="user-circle" type="regular" size="md"/>
-          </div><div>
+            name="user-circle" type="regular" size="lg"/>
+          </div>
+          <div>
             <box-icon color='#3B4779' animation='tada-hover' 
-            name="user-circle" type="regular" size="md"/>
-          </div><div>
+            name="user-circle" type="regular" size="lg"/>
+          </div>
+          <div>
             <box-icon color='#3B4779' animation='tada-hover' 
-            name="user-circle" type="regular" size="md"/>
-          </div><div>
+            name="user-circle" type="regular" size="lg"/>
+          </div>
+          <div>
             <box-icon color='#3B4779' animation='tada-hover' 
-            name="user-circle" type="regular" size="md"/>
-          </div><div>
+            name="user-circle" type="regular" size="lg"/>
+          </div>
+          <div>
             <box-icon color='#3B4779' animation='tada-hover' 
-            name="user-circle" type="regular" size="md"/>
-          </div><div>
+            name="user-circle" type="regular" size="lg"/>
+          </div>
+          <div>
             <box-icon color='#3B4779' animation='tada-hover' 
-            name="user-circle" type="regular" size="md"/>
-          </div><div>
+            name="user-circle" type="regular" size="lg"/>
+          </div>
+          <div>
             <box-icon color='#3B4779' animation='tada-hover' 
-            name="user-circle" type="regular" size="md"/>
-          </div><div>
+            name="user-circle" type="regular" size="lg"/>
+          </div>
+          <div>
             <box-icon color='#3B4779' animation='tada-hover' 
-            name="user-circle" type="regular" size="md"/>
-          </div><div>
+            name="user-circle" type="regular" size="lg"/>
+          </div>
+          <div>
             <box-icon color='#3B4779' animation='tada-hover' 
-            name="user-circle" type="regular" size="md"/>
-          </div><div>
+            name="user-circle" type="regular" size="lg"/>
+          </div>
+          <div>
             <box-icon color='#3B4779' animation='tada-hover' 
-            name="user-circle" type="regular" size="md"/>
+            name="user-circle" type="regular" size="lg"/>
+          </div>
+          <div>
+            <box-icon color='#3B4779' animation='tada-hover' 
+            name="user-circle" type="regular" size="lg"/>
+          </div>
+          <div>
+            <box-icon color='#3B4779' animation='tada-hover' 
+            name="user-circle" type="regular" size="lg"/>
+          </div>
+          <div>
+            <box-icon color='#3B4779' animation='tada-hover' 
+            name="user-circle" type="regular" size="lg"/>
+          </div>
+          <div>
+            <box-icon color='#3B4779' animation='tada-hover' 
+            name="user-circle" type="regular" size="lg"/>
+          </div>
+          <div>
+            <box-icon color='#3B4779' animation='tada-hover' 
+            name="user-circle" type="regular" size="lg"/>
           </div>
         </Carousel>
+        <div id="fade"/>
       </div> <br/>
     </div>
   );
